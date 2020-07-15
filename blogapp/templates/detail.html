@@ -1,0 +1,6 @@
+<h1>{{blogdetail.title}}</h1>
+<p>{{blogdetail.pub_date}}</p>
+<p>{{blogdetail.body}}</p>
+<a href="{% url 'main' %}">돌아가기</a>
+<a href="{% url 'renew' blogdetail.id %}">수정하기</a>
+<a href="{% url 'delete' blogdetail.id %}">삭제하기</a>
